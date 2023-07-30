@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import './globals.css';
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500&display=swap.css"/>
 
 export default function Portfolio() {
   return (
@@ -19,11 +20,11 @@ export default function Portfolio() {
           priority
         />
         <div className="button-container">
-          <button>Home</button>
-          <button>About me</button>
-          <button>Projects</button>
-          <button>Skills</button>
-          <button>Dark & Right</button>
+          <button className='button1'>Home</button>
+          <button className='button2'>About me</button>
+          <button className='button3'>Projects</button>
+          <button className='button4'>Skills</button>
+          <button className='button5'>Dark & Right</button>
         </div>
       
       <div className='container-home'>
@@ -206,6 +207,193 @@ export default function Portfolio() {
             />
         </div>
       </div>
+
+      <div className='container-projects'>
+      <h1 className='titulo1'>Projects</h1>
+      <Image className='eclipseprojects'
+              src="/eclipseprojects.png"
+              alt="eclipseprojects"
+              width={380}
+              height={360}
+              priority
+            />
+      <Image className='projects2'
+              src="/viewmore.png"
+              alt="projects2"
+              width={226}
+              height={48}
+              priority
+            />
+      <Image className='faixa'
+              src="/faixa.png"
+              alt="faixa"
+              width={200}
+              height={330}
+              priority
+            />
+      <Image className='eclipseprojects2'
+              src="/eclipseprojects2.png"
+              alt="eclipseprojects"
+              width={380}
+              height={360}
+              priority
+            />
+      <Image className='faixa2'
+              src="/faixa2.png"
+              alt="faixa2"
+              width={200}
+              height={330}
+              priority
+            />
+      <Image className='eclipseprojects3'
+              src="/eclipseprojects3.png"
+              alt="eclipseprojects3"
+              width={380}
+              height={360}
+              priority
+            />
+      <Image className='faixa3'
+              src="/faixa3.png"
+              alt="faixa3"
+              width={200}
+              height={330}
+              priority
+            />
+      <h3 className='textsoon'>Soon News</h3>
+      <h3 className='textsoon2'>Soon News</h3>
+      <h3 className='textsoon3'>Soon News</h3>
+      <h5 className='viewmore'>View More</h5>
+      </div>
+
+      <div className='container-skills'>
+      <h1 className='titulo4'>Skills</h1>
+      <Image className='cuadrado1'
+              src="/cuadrado1.png"
+              alt="cuadrado1"
+              width={140}
+              height={140}
+              priority
+            />
+      <Image className='cuadrado2'
+              src="/cuadrado2.png"
+              alt="cuadrado2"
+              width={140}
+              height={140}
+              priority
+            />
+      <Image className='cuadrado3'
+              src="/cuadrado3.png"
+              alt="cuadrado3"
+              width={140}
+              height={140}
+              priority
+            />
+      <Image className='cuadrado4'
+              src="/cuadrado4.png"
+              alt="cuadrado4"
+              width={140}
+              height={140}
+              priority
+            />
+      <Image className='cuadrado5'
+              src="/cuadrado5.png"
+              alt="cuadrado5"
+              width={140}
+              height={140}
+              priority
+            />
+      <Image className='cuadrado6'
+              src="/cuadrado61.png"
+              alt="cuadrado6"
+              width={140}
+              height={140}
+              priority
+            />
+      <Image className='cuadrado7'
+              src="/cuadrado7.png"
+              alt="cuadrado7"
+              width={140}
+              height={140}
+              priority
+            />
+      <Image className='cuadrado8'
+              src="/cuadrado81.png"
+              alt="cuadrado8"
+              width={140}
+              height={140}
+              priority
+            />
+      <Image className='cuadrado9'
+              src="/cuadrado91.png"
+              alt="cuadrado9"
+              width={140}
+              height={140}
+              priority
+            />
+      <Image className='robot'
+              src="/robot.png"
+              alt="robotframework"
+              width={140}
+              height={140}
+              priority
+            />
+      <Image className='play'
+              src="/play.png"
+              alt="playwright"
+              width={100}
+              height={90}
+              priority
+            />
+      <Image className='k6'
+              src="/k6.png"
+              alt="k6-performance"
+              width={90}
+              height={90}
+              priority
+            />
+      <Image className='git'
+              src="/git.png"
+              alt="git"
+              width={100}
+              height={100}
+              priority
+            />
+      <Image className='reactjs'
+              src="/react1.png"
+              alt="robotframework"
+              width={140}
+              height={140}
+              priority
+            />
+      <Image className='js'
+              src="/js1.png"
+              alt="js"
+              width={140}
+              height={140}
+              priority
+            />
+      <Image className='css'
+              src="/css1.png"
+              alt="css3"
+              width={140}
+              height={140}
+              priority
+            />
+      <Image className='html'
+              src="/html1.png"
+              alt="html5"
+              width={140}
+              height={140}
+              priority
+            />
+      <Image className='bdd'
+              src="/tecnicabdd.png"
+              alt="bdd"
+              width={125}
+              height={125}
+              priority
+            />
+        </div>
     </div>
   );
 }

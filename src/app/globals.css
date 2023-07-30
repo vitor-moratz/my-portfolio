@@ -1,13 +1,15 @@
 /* globals.css */
 @font-face {
   font-family: 'Saira';
-  src: url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+  src: url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500&display=swap');
 }
+
+
 
 body {
   margin: 0;
   overflow-x: hidden; 
-  font-family: 'Saira';
+  font-family: 'Saira', sans-serif;
 }
 
 .header {
@@ -43,14 +45,14 @@ body {
   z-index: 0;
 }
 
-.button-container {
+.button-container { 
   display: flex;
   gap: 18px;
   height: 30px;
   position: absolute;
   right: 20px;
   top: 25px;
-  left: 885px;
+  left: 780px;
   margin: 0 300px;
 }
 
@@ -123,10 +125,23 @@ body {
   margin: 0;
 }
 
-.button {
-  border-radius: 10px 5px 15px 0;
+.button1, .button2, .button3, .button4, .button5 {
+  border-radius: 13px;
   background-color: rgba(223, 223, 223, 1);
-  font-size: 22px;
+  font-size: 15px;
+  width: 100px;
+}
+
+.button2 {
+  width: 130px;
+}
+
+.button3 {
+  width: 120px;
+}
+
+.button5 {
+  width: 170px;
 }
 
 .container-about {
@@ -475,3 +490,304 @@ body {
   left: -69px;
   margin: 0 300px;
 }
+
+.container-projects {
+  display: flex;
+  padding: 10px;
+  background-color: rgba(26, 29, 30, 1);
+  width: 100%;
+  height: 800px;
+  margin-top: 80px; 
+  margin-bottom: 10px;  
+  padding: 10px;
+  position: absolute;
+  right: -300px;
+  top: 1700px;
+  margin: 0 280px;
+  z-index: 0;
+}
+
+.eclipseprojects {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  right: 20px;
+  top: 270px;
+  left: 485px;
+  margin: 0 300px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.projects2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  right: 20px;
+  top: 730px;
+  left: 560px;
+  margin: 0 300px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.viewmore {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  right: 20px;
+  top: 739px;
+  left: 620px;
+  margin: 0 300px;
+  z-index: 1;
+  font-size: 19px;
+}
+
+.faixa {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 280px;
+  left: 575px;
+  margin: 0 300px;
+  z-index: 1;
+  
+}
+
+.textsoon {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 100px;
+  left: 390px;
+  margin: 0 300px;
+  z-index: 1;
+  transform: rotate(-62deg); 
+  font-size: 32px;
+  color: rgb(85, 85, 85);
+}
+
+.eclipseprojects2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  right: 20px;
+  top: 270px;
+  left: 80px;
+  margin: 0 300px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.faixa2 {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 280px;
+  left: 170px;
+  margin: 0 300px;
+  z-index: 1;
+  
+}
+
+.textsoon2 {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: -140px;
+  left: -160px;
+  margin: 0 300px;
+  z-index: 1;
+  transform: rotate(-62deg); 
+  font-size: 32px;
+  color: rgb(85, 85, 85);
+}
+
+.eclipseprojects3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  right: 20px;
+  top: 270px;
+  left: 890px;
+  margin: 0 300px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.faixa3 {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 280px;
+  left: 980px;
+  margin: 0 300px;
+  z-index: 1;
+  
+}
+
+.textsoon3 {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 345px;
+  left: 940px;
+  margin: 0 300px;
+  z-index: 1;
+  transform: rotate(-62deg); 
+  font-size: 32px;
+  color: rgb(85, 85, 85);
+}
+
+.container-skills {
+  display: flex;
+  padding: 10px;
+  background-color: rgba(11, 11, 11, 0.93);
+  width: 100%;
+  height: 800px;
+  margin-top: 80px; 
+  margin-bottom: 10px;  
+  padding: 10px;
+  position: absolute;
+  right: -300px;
+  top: 2520px;
+  margin: 0 280px;
+  z-index: 0;
+}
+
+.titulo4 {
+    font-size: 62px;
+    display: flex;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 585px;
+    top: 80px;
+    margin: 0 300px;
+  }
+
+  .cuadrado1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    right: 20px;
+    top: 250px;
+    left: 80px;
+    margin: 0 300px;
+  }
+
+  .robot {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    right: 20px;
+    top: 250px;
+    left: 80px;
+    margin: 0 300px;
+  }
+
+  .cuadrado2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    right: 20px;
+    top: 420px;
+    left: 80px;
+    margin: 0 300px;
+  }
+
+  .play {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    right: 20px;
+    top: 443px;
+    left: 100px;
+    margin: 0 300px;
+  }
+
+  .cuadrado3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    right: 20px;
+    top: 590px;
+    left: 80px;
+    margin: 0 300px;
+  }
+
+  .k6 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    right: 20px;
+    top: 611px;
+    left: 103px;
+    margin: 0 300px;
+  }
+
+  .cuadrado4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    right: 20px;
+    top: 250px;
+    left: 310px;
+    margin: 0 300px;
+  }
+
+  .bdd {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    right: 20px;
+    top: 256px;
+    left: 317px;
+    margin: 0 300px;
+  }
+
+  .cuadrado5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    right: 20px;
+    top: 420px;
+    left: 310px;
+    margin: 0 300px;
+  }
+
+  .git {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    right: 20px;
+    top: 438px;
+    left: 330px;
+    margin: 0 300px;
+  }
+
+
+  .cuadrado7 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    right: 20px;
+    top: 250px;
+    left: 540px;
+    margin: 0 300px;
+  }
