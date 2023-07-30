@@ -303,7 +303,7 @@ export default function Portfolio() {
               priority
             />
       <Image className='cuadrado6'
-              src="/cuadrado61.png"
+              src="/cuadrado6.png"
               alt="cuadrado6"
               width={140}
               height={140}
@@ -317,14 +317,14 @@ export default function Portfolio() {
               priority
             />
       <Image className='cuadrado8'
-              src="/cuadrado81.png"
+              src="/cuadrado8.png"
               alt="cuadrado8"
               width={140}
               height={140}
               priority
             />
       <Image className='cuadrado9'
-              src="/cuadrado91.png"
+              src="/cuadrado9.png"
               alt="cuadrado9"
               width={140}
               height={140}
@@ -358,32 +358,32 @@ export default function Portfolio() {
               height={100}
               priority
             />
-      <Image className='reactjs'
-              src="/react1.png"
+      <Image className='react'
+              src="/react2.png"
               alt="robotframework"
-              width={140}
-              height={140}
+              width={110}
+              height={90}
               priority
             />
       <Image className='js'
-              src="/js1.png"
+              src="/js.png"
               alt="js"
-              width={140}
-              height={140}
+              width={200}
+              height={105}
               priority
             />
       <Image className='css'
-              src="/css1.png"
+              src="/css.png"
               alt="css3"
-              width={140}
-              height={140}
+              width={110}
+              height={105}
               priority
             />
       <Image className='html'
-              src="/html1.png"
+              src="/html5.png"
               alt="html5"
-              width={140}
-              height={140}
+              width={130}
+              height={130}
               priority
             />
       <Image className='bdd'
@@ -393,6 +393,25 @@ export default function Portfolio() {
               height={125}
               priority
             />
+      <h2 className='textskills'>/* Mouse over a skill to read the description */</h2>
+        </div>
+    <div className='footer'>
+        <Image className='rodape'
+          src="/rodape.png"
+          alt="fundo da logo rodape"
+          width={270}
+          height={75}
+          priority
+        />
+        <Image className='logo2'
+          src="/logo2.png"
+          alt="logo2"
+          width={320}
+          height={65}
+          priority
+        />
+      <h6 className='copyright'>© 2023 Moratz. All rights reserved</h6>
+      <h6 className='privacity'>Privacity Policy</h6>
         </div>
     </div>
   );
