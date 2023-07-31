@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import './globals.css';
-<link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500&display=swap.css"/>
 
 export default function Portfolio() {
   return (
