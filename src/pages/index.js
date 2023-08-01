@@ -1,11 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Saira } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
 import Button from '@/components/Button';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-const saira = Saira({ subsets: ['latin'] });
+import { FaTwitter, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export default function Home() {
   const icons = {
@@ -80,11 +77,11 @@ export default function Home() {
               <u>
                 <h2>Contact Me</h2>
               </u>
-              <div className={styles["contact-logos"]}>
-                <FontAwesomeIcon icon={['fab', 'twitter']} />
-                <FontAwesomeIcon icon={['fab', 'instagram']} />
-                <FontAwesomeIcon icon={['fab', 'linkedin']} />
-                <FontAwesomeIcon icon={['fab', 'github']} />
+              <div className={styles['contact-logos']}>
+                <FaTwitter />
+                <FaInstagram />
+                <FaLinkedin />
+                <FaGithub />
               </div>
             </div>
           </div>
