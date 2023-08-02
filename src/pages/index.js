@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 import Button from '@/components/Button';
-import { FaTwitter, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 
 export default function Home() {
   const icons = {
@@ -14,7 +14,7 @@ export default function Home() {
     JS: '/js.png',
     K6: '/k6.png',
     HTML: '/html5.png',
-    React: '/react.png',
+    React: '/react2.png',
   };
 
   return (
@@ -28,7 +28,7 @@ export default function Home() {
 
       <div className={styles['apresentation-container']}>
         <div className={styles['apresentation-text']}>
-          <h1>{"I'm Vitor"}</h1>
+          <h1 id='home'>{"I'm Vitor"}</h1>
           <h3>QA | Front-end Developer</h3>
         </div>
         <div className={styles['apresentation-image']}>
@@ -37,7 +37,7 @@ export default function Home() {
       </div>
       <div className={styles['about-container']}>
         <u>
-          <h1>About Me</h1>
+          <h1 id='aboutme'>About Me</h1>
         </u>
         <div className={styles['about-details-container']}>
           <div className={styles['about-details']}>
@@ -78,7 +78,7 @@ export default function Home() {
                 <h2>Contact Me</h2>
               </u>
               <div className={styles['contact-logos']}>
-                <FaTwitter />
+                <FaWhatsapp />
                 <FaInstagram />
                 <FaLinkedin />
                 <FaGithub />
@@ -89,7 +89,9 @@ export default function Home() {
       </div>
 
       <div className={styles['projects-container']}>
-        <h1>Projects</h1>
+        <u>
+        <h1 id='projects'>Projects</h1>
+        </u>
         <div className={styles['projects-links']}>
           <div className={styles['projects-icons']} />
           <div className={styles['projects-icons']} />
@@ -100,7 +102,9 @@ export default function Home() {
         </div>
       </div>
       <div className={styles['skills-container']}>
-        <h1>Skills</h1>
+        <u>
+        <h1 id='skills'>Skills</h1>
+        </u>
         <div className={styles['skills-logos']}>
           {Object.keys(icons).map((icon) => (
             <div key={icon} className={styles['skills-icons']}>

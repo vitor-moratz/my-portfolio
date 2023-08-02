@@ -42,12 +42,12 @@
 }
 
 .about-foto {
-  width: 30rem;
-  height: 30rem;
+  width: 15rem;
+  height: 15rem;
   background-color: #dfdfdf;
   border-radius: 100%;
   position: relative;
-  outline: 15px solid #dfdfdf;
+  outline: 8px solid #dfdfdf;
 }
 
 .about-foto img {
@@ -62,7 +62,7 @@
 }
 
 .about-skills {
-  width: 30%;
+  width: 50%;
 }
 
 .language-skills {
@@ -82,7 +82,7 @@
   height: 15rem;
   background-color: #dfdfdf;
   border-radius: 100%;
-  margin: 2rem 8rem;
+  margin: 3rem 2rem;
 }
 
 .projects-links {
@@ -107,14 +107,14 @@
 
 .skills-icons {
   margin: 1rem;
-  width: 8rem;
+  width: 9rem;
   height: 8rem;
   position: relative;
 }
 
 .skills-icons {
   background-color: #dfdfdf;
-  border-radius: 1rem;
+  border-radius: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,6 +134,6 @@
   justify-content: space-between;
 }
 .contact-logos > svg {
-  width: 5rem;
-  height: 5rem;
+  width: 7rem;
+  height: 3rem;
 }
