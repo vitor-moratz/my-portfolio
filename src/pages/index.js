@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 import Button from '@/components/Button';
-import { FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 import { useRef } from 'react';
 
 export default function Home({ homeRef, aboutMeRef, projectsRef, skillsRef }) {
@@ -79,11 +79,19 @@ export default function Home({ homeRef, aboutMeRef, projectsRef, skillsRef }) {
               <u>
                 <h2>Contact Me</h2>
               </u>
-              <div className={styles['contact-logos']}>
+              <div className={styles['redirect']}>
+                <a className={styles['redirect']} href="https://api.whatsapp.com/send?phone=5541998595330&text=Welcome%20Moratz%20Programming!" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp />
+                </a>
+                <a className={styles['redirect']} href="https://www.instagram.com/vitor.morato_smile/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram />
+                </a>
+                <a className={styles['redirect']} href="https://www.linkedin.com/in/vitor-moratz-b24629152/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
+                </a>
+                <a className={styles['redirect']} href="https://github.com/VitorMoratoz" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
+                </a>
               </div>
             </div>
           </div>
