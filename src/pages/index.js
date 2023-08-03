@@ -3,8 +3,10 @@ import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 import Button from '@/components/Button';
 import { FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
+import { useRef } from 'react';
 
-export default function Home() {
+export default function Home({ homeRef, aboutMeRef, projectsRef, skillsRef }) {
+
   const icons = {
     Robot: '/robot.png',
     BDD: '/tecnicabdd.png',
@@ -26,7 +28,7 @@ export default function Home() {
         <link rel='icon' href='/favFontAwesomeIconicon.ico' />
       </Head>
 
-      <div className={styles['apresentation-container']}>
+      <div className={styles['apresentation-container']} ref={aboutMeRef}>
         <div className={styles['apresentation-text']}>
           <h1 id='home'>{"I'm Vitor"}</h1>
           <h3>QA | Front-end Developer</h3>
@@ -35,7 +37,7 @@ export default function Home() {
           <Image src='/moratz.png' alt='Meu avatar' fill />
         </div>
       </div>
-      <div className={styles['about-container']}>
+      <div className={styles['about-container']} ref={aboutMeRef}>
         <u>
           <h1 id='aboutme'>About Me</h1>
         </u>
@@ -59,7 +61,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={styles['about-skills']}>
+          <div className={styles['about-skills']} >
             <div className={styles['language-skills']}>
               <u>
                 <h2>Languages</h2>
@@ -88,7 +90,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles['projects-container']}>
+      <div className={styles['projects-container']} ref={projectsRef}>
         <u>
         <h1 id='projects'>Projects</h1>
         </u>
@@ -101,7 +103,7 @@ export default function Home() {
           <Button text='See more' />
         </div>
       </div>
-      <div className={styles['skills-container']}>
+      <div className={styles['skills-container']} ref={skillsRef}>
         <u>
         <h1 id='skills'>Skills</h1>
         </u>
