@@ -3,9 +3,8 @@ import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 import Button from '@/components/Button';
 import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
-import { useRef } from 'react';
 
-export default function Home({ homeRef, aboutMeRef, projectsRef, skillsRef }) {
+export default function Home({ aboutMeRef, projectsRef, skillsRef }) {
 
   const icons = {
     Robot: '/robot.png',
