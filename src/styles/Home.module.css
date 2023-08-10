@@ -30,7 +30,24 @@
 }
 
 .about-container h1{
-  font-size: 3rem;
+  font-size: 2.5rem;
+}
+
+.projects-container h1{
+  font-size: 2.5rem;
+}
+
+.skills-container h1{
+  font-size: 2.5rem;
+}
+
+.hometitulo1 {
+  font-size: 3.5rem;
+}
+
+.hometitulo2 {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .about-details-container {
