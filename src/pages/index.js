@@ -29,7 +29,7 @@ export default function Home({ aboutMeRef, projectsRef, skillsRef }) {
 
       <div className={styles['apresentation-container']} ref={aboutMeRef}>
         <div className={styles['apresentation-text']}>
-          <h1 id='home' className={styles['hometitulo1']}>{{I'm Vitor}}</h1>
+          <h1 id='home' className={styles['hometitulo1']}>{"I'm Vitor"}</h1>
           <h3 className={styles['hometitulo2']}>QA | Front-end Developer</h3>
         </div>
         <div className={styles['apresentation-image']}>
