@@ -28,17 +28,17 @@
 
 @media (max-width: 375px) {
   .footer-container {
-    flex-direction: column; /* Empilhar verticalmente em dispositivos móveis */
+    flex-direction: column; 
     align-items: center;
-    height: auto; /* Altura automática para acomodar o conteúdo */
+    height: auto; 
     padding: 1rem;
   }
 
   .footer-logo {
-    width: 10rem; /* Reduz o tamanho do logotipo em dispositivos móveis */
-    height: 3rem; /* Altura automática para manter a proporção */
+    width: 10rem; 
+    height: 3rem; 
     margin-top: 1rem;
-    margin-bottom: 1rem; /* Adicionar espaço inferior */
+    margin-bottom: 1rem; 
     margin-right: 1rem;
   }
 }

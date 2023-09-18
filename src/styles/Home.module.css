@@ -179,47 +179,47 @@
   }
 
   .apresentation-image {
-    width: 20rem; /* Reduz o tamanho da imagem */
-    height: 20rem; /* Reduz o tamanho da imagem */
-    margin-bottom: 1rem; /* Adiciona espaço inferior */
+    width: 20rem; 
+    height: 20rem; 
+    margin-bottom: 1rem; 
   }
 
   .about-container {
     padding-top: 1rem;
-    padding-bottom: 2rem; /* Ajuste de espaço inferior */
+    padding-bottom: 2rem; 
   }
 
   .about-details-container {
-    flex-direction: column; /* Empilhar os detalhes verticalmente */
+    flex-direction: column; 
     align-items: center;
   }
 
   .about-foto {
-    width: 10rem; /* Reduz o tamanho da imagem */
-    height: 10rem; /* Reduz o tamanho da imagem */
-    margin-bottom: 1rem; /* Adiciona espaço inferior */
-    outline: 4px solid #dfdfdf; /* Reduz a largura da borda */
+    width: 10rem; 
+    height: 10rem; 
+    margin-bottom: 1rem; 
+    outline: 4px solid #dfdfdf; 
   }
 
   .about-text {
-    width: 80%; /* Ajuste a largura do texto */
-    text-align: center; /* Centraliza o texto */
+    width: 80%; 
+    text-align: center; 
   }
 
   .about-skills {
-    width: 80%; /* Ajuste a largura das habilidades */
-    text-align: center; /* Centraliza as habilidades */
+    width: 80%; 
+    text-align: center; 
   }
 
   .projects-container {
     padding-top: 1rem;
-    padding-bottom: 2rem; /* Ajuste de espaço inferior */
+    padding-bottom: 2rem; 
   }
 
   .projects-icons {
-    width: 7rem; /* Reduz o tamanho dos ícones de projeto */
-    height: 7rem; /* Reduz o tamanho dos ícones de projeto */
-    margin: 0.1rem; /* Ajuste de margem */
+    width: 7rem; 
+    height: 7rem; 
+    margin: 0.1rem; 
     margin-bottom: 1rem;
   }
 
@@ -239,20 +239,20 @@
   }
 
   .skills-icons img {
-    width: 78% !important; /* Ajuste o tamanho da imagem */
-    height: 70% !important; /* Ajuste o tamanho da imagem */
-    transform: translate(0%, 0%); /* Remova a transformação */
+    width: 78% !important; 
+    height: 70% !important; 
+    transform: translate(0%, 0%); 
     margin-left: 0.6rem;
     margin-top: 0.9rem;
   }
   
   .redirect {
-    flex-direction: row; /* Empilhe os elementos verticalmente */
+    flex-direction: row; 
     align-items: center;
-    text-align: center; /* Centralize o texto */
+    text-align: center; 
   }
   
   .redirect > svg {
-    margin-bottom: 1rem; /* Adiciona espaço inferior */
+    margin-bottom: 1rem; 
   }
 }

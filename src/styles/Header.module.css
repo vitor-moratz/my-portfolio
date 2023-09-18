@@ -31,24 +31,23 @@
     display: flex;
 }
 
-/* Estilos para dispositivos móveis (largura máxima de 375px) */
 @media (max-width: 375px) {
     .header-container {
-      flex-direction: column; /* Empilhar verticalmente em dispositivos móveis */
+      flex-direction: column;
       align-items: center;
       padding: 1rem;
-      height: auto; /* Altura automática para acomodar o conteúdo */
+      height: auto;
     }
   
     .header-logo {
-      width: 10rem; /* Reduz o tamanho do logotipo em dispositivos móveis */
-      height: 3rem; /* Altura automática para manter a proporção */
-      right: 5rem; /* Redefinir a posição direita */
+      width: 10rem; 
+      height: 3rem; 
+      right: 5rem;
     }
   
     .header-buttons {
-      flex-direction: row; /* Empilhar verticalmente os botões */
-      display: none; /* Ocultar os botões por padrão */
+      flex-direction: row; 
+      display: none; 
       padding-top: 1rem;
     }
   

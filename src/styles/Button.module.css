@@ -28,15 +28,15 @@ border: solid 2px #dfdfdf;
 
 @media (max-width: 375px) {
     .button {
-      font-size: 10px; /* Reduza o tamanho da fonte em dispositivos móveis */
-      padding: 3px 10px; /* Reduza o padding do botão */
-      border-radius: 10px; /* Reduza o raio do border-radius */
-      margin: 0.2rem; /* Ajuste de margem menor */
+      font-size: 10px; 
+      padding: 3px 10px; 
+      border-radius: 10px; 
+      margin: 0.2rem; 
     }
   
     .button:hover {
-      padding: 2px 12px; /* Reduza o padding do botão em hover */
-      transform: translateY(0); /* Remova a transformação translateY em hover */
+      padding: 2px 12px; 
+      transform: translateY(0); 
       background-color: #fff;
       color: #333333;
       border: 2px solid #dfdfdf;
