@@ -107,7 +107,7 @@ export default function Home({ aboutMeRef, projectsRef, skillsRef }) {
           <div className={styles['projects-icons']} />
         </div>
         <div className={styles['see-more']}>
-          <Button text='See more' />
+          <Button id='see-more-button' text='See more' />
         </div>
       </div>
       <div className={styles['skills-container']} ref={skillsRef}>
