@@ -10,7 +10,7 @@ main {
   margin: 8rem 2;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   body, html {
     font-size: 16px; 
   }

@@ -171,7 +171,7 @@
   margin-right: 2.5rem;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .apresentation-container {
     flex-direction: column;
     align-items: center;
