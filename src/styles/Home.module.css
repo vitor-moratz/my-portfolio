@@ -56,7 +56,7 @@
   align-items: center;
 }
 .about-details {
-  width: 70%;
+  width: 110%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,6 +115,11 @@
   align-items: center;
 }
 
+.projects-buttons {
+
+  display: flex;
+}
+
 .skills-container {
   display: flex;
   flex-direction: column;
@@ -164,4 +169,90 @@
   height: 3rem;
   color: white;
   margin-right: 2.5rem;
+}
+
+@media (max-width: 375px) {
+  .apresentation-container {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 7rem;
+  }
+
+  .apresentation-image {
+    width: 20rem; /* Reduz o tamanho da imagem */
+    height: 20rem; /* Reduz o tamanho da imagem */
+    margin-bottom: 1rem; /* Adiciona espaço inferior */
+  }
+
+  .about-container {
+    padding-top: 1rem;
+    padding-bottom: 2rem; /* Ajuste de espaço inferior */
+  }
+
+  .about-details-container {
+    flex-direction: column; /* Empilhar os detalhes verticalmente */
+    align-items: center;
+  }
+
+  .about-foto {
+    width: 10rem; /* Reduz o tamanho da imagem */
+    height: 10rem; /* Reduz o tamanho da imagem */
+    margin-bottom: 1rem; /* Adiciona espaço inferior */
+    outline: 4px solid #dfdfdf; /* Reduz a largura da borda */
+  }
+
+  .about-text {
+    width: 80%; /* Ajuste a largura do texto */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .about-skills {
+    width: 80%; /* Ajuste a largura das habilidades */
+    text-align: center; /* Centraliza as habilidades */
+  }
+
+  .projects-container {
+    padding-top: 1rem;
+    padding-bottom: 2rem; /* Ajuste de espaço inferior */
+  }
+
+  .projects-icons {
+    width: 7rem; /* Reduz o tamanho dos ícones de projeto */
+    height: 7rem; /* Reduz o tamanho dos ícones de projeto */
+    margin: 0.1rem; /* Ajuste de margem */
+    margin-bottom: 1rem;
+  }
+
+  .skills-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .skills-logos {
+    width: 80%;
+  }
+
+  .skills-icons {
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem;
+  }
+
+  .skills-icons img {
+    width: 78% !important; /* Ajuste o tamanho da imagem */
+    height: 70% !important; /* Ajuste o tamanho da imagem */
+    transform: translate(0%, 0%); /* Remova a transformação */
+    margin-left: 0.6rem;
+    margin-top: 0.9rem;
+  }
+  
+  .redirect {
+    flex-direction: row; /* Empilhe os elementos verticalmente */
+    align-items: center;
+    text-align: center; /* Centralize o texto */
+  }
+  
+  .redirect > svg {
+    margin-bottom: 1rem; /* Adiciona espaço inferior */
+  }
 }

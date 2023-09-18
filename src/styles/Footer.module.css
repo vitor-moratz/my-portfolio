@@ -25,3 +25,21 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media (max-width: 375px) {
+  .footer-container {
+    flex-direction: column; /* Empilhar verticalmente em dispositivos móveis */
+    align-items: center;
+    height: auto; /* Altura automática para acomodar o conteúdo */
+    padding: 1rem;
+  }
+
+  .footer-logo {
+    width: 10rem; /* Reduz o tamanho do logotipo em dispositivos móveis */
+    height: 3rem; /* Altura automática para manter a proporção */
+    margin-top: 1rem;
+    margin-bottom: 1rem; /* Adicionar espaço inferior */
+    margin-right: 1rem;
+  }
+}
+

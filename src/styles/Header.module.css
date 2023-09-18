@@ -30,3 +30,45 @@
 
     display: flex;
 }
+
+/* Estilos para dispositivos móveis (largura máxima de 375px) */
+@media (max-width: 375px) {
+    .header-container {
+      flex-direction: column; /* Empilhar verticalmente em dispositivos móveis */
+      align-items: center;
+      padding: 1rem;
+      height: auto; /* Altura automática para acomodar o conteúdo */
+    }
+  
+    .header-logo {
+      width: 10rem; /* Reduz o tamanho do logotipo em dispositivos móveis */
+      height: 3rem; /* Altura automática para manter a proporção */
+      right: 5rem; /* Redefinir a posição direita */
+    }
+  
+    .header-buttons {
+      flex-direction: row; /* Empilhar verticalmente os botões */
+      display: none; /* Ocultar os botões por padrão */
+      padding-top: 1rem;
+    }
+  
+    .menu-open .header-buttons {
+      display: flex;
+    }
+  
+    .menu-button {
+      background: #dfdfdf;
+      border-radius: 0.5rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+      position: absolute;
+      top: 1rem;
+      right: 0.5rem;
+    }
+  
+    .menu-icon {
+      font-size: 2rem;
+    }
+  }
+  
+  
