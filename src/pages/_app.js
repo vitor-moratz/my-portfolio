@@ -10,6 +10,7 @@ export default function App({ Component, pageProps }) {
   const aboutMeRef = useRef(null);
   const projectsRef = useRef(null);
   const skillsRef = useRef(null);
+  const certificationsRef = useRef(null);
 
   return (
     <>
@@ -18,13 +19,15 @@ export default function App({ Component, pageProps }) {
         aboutMeRef={aboutMeRef}
         projectsRef={projectsRef}
         skillsRef={skillsRef}
+        certificationsRef={certificationsRef}
       />
       <main className={`${saira.className}`}>
         <Component {...pageProps}
           homeRef={homeRef}
           aboutMeRef={aboutMeRef}
           projectsRef={projectsRef}
-          skillsRef={skillsRef} />
+          skillsRef={skillsRef}
+          certificationsRef={certificationsRef} />
       </main>
       <Footer />
     </>

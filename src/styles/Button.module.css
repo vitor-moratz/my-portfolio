@@ -1,12 +1,10 @@
 .button{
-font-weight:500;
-font-size: 12px;
-color: #000000;
-background-color: #dfdfdf;
-padding: 5px 10px;
-border: 2px solid #dfdfdf;
-box-shadow: #000000 0px 0px 0px 0px;
-border-radius: 15px;
+font-weight:450;
+font-size: 15px;
+color: #dfdfdf;
+background-color: transparent;
+border: transparent;
+padding: 5px 12px;
 transition : 1000ms;
 transform: translateY(0);
 display: flex;
@@ -14,32 +12,26 @@ flex-direction: row;
 align-items: center;
 cursor: pointer;
 margin: 0.25rem;
+text-decoration: underline;
 }
 
 .button:hover{
-
 transition : 1000ms;
-padding: 5px 12px;
-transform : translateY(-1px);
-background-color: #fff;
-color: #333333;
-border: solid 2px #dfdfdf;
+transform : translateY(-2px);
+color: #ffffff;
 }
 
 @media (max-width: 450px) {
     .button {
       font-size: 10px; 
       padding: 3px 10px; 
-      border-radius: 10px; 
       margin: 0.2rem; 
     }
   
     .button:hover {
-      padding: 2px 12px; 
       transform: translateY(0); 
-      background-color: #fff;
-      color: #333333;
-      border: 2px solid #dfdfdf;
+      background-color: transparent;
+      color: #dfdfdf;
     }
   }
   

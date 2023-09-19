@@ -7,6 +7,21 @@
     height: 2.5rem;
 }
 
+.theme {
+  padding-left: 0.3rem;
+  display: flex;
+  color: #dfdfdf;
+  font-size: 1.7rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.theme:hover{
+  transition : 1000ms;
+  transform : translateY(-2px);
+  color: #ffffff;
+  }
+
 .header-logo {
     background-color: #dfdfdf;
     border-radius: 1rem;
@@ -27,7 +42,6 @@
 
 
 .header-buttons {
-
     display: flex;
 }
 

@@ -5,7 +5,7 @@ import Button from '@/components/Button';
 import React, { useState } from 'react';
 import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp, FaArrowCircleUp } from 'react-icons/fa';
 
-export default function Home({ aboutMeRef, projectsRef, skillsRef }) {
+export default function Home({ aboutMeRef, projectsRef, skillsRef, certificationsRef }) {
 
   const icons = {
     Robot: '/robot.png',
@@ -106,7 +106,9 @@ export default function Home({ aboutMeRef, projectsRef, skillsRef }) {
         </div>
       </div>
       <div className={styles['projects-container']} ref={projectsRef}>
+        <u>
         <h1 id='projects'>Projects</h1>
+        </u>
         <div className={styles['projects-links']}>
           <div className={styles['projects-icons']}></div>
           <div className={styles['projects-icons']}></div>
@@ -151,6 +153,44 @@ export default function Home({ aboutMeRef, projectsRef, skillsRef }) {
               <Image src={icons[icon]} alt={icon} key={icon} fill />
             </div>
           ))}
+        </div>
+      </div>
+      <div className={styles['certifications-container']} ref={certificationsRef}>
+        <u>
+        <h1 id='certifications'>Certifications</h1>
+        </u>
+        <div className={styles['certifications-links']}>
+          <div className={styles['certifications-icons']}></div>
+          <div className={styles['certifications-icons']}></div>
+          <div className={styles['certifications-icons']}></div>
+        </div>
+        <div className={styles['see-more']}>
+          {!expanded && (
+            <button
+              id='see-more-button'
+              className={`see-more-button ${styles['centered-button']}`}
+              onClick={toggleExpansion}
+            >
+              See more
+            </button>
+          )}
+          {expanded && (
+            <div className={styles['expanded-content']}>
+              <div className={styles['certifications-links']}>
+                <div className={styles['certifications-icons']}></div>
+                <div className={styles['certifications-icons']}></div>
+                <div className={styles['certifications-icons']}></div>
+              </div>
+            </div>
+          )}
+          {expanded && (
+            <button
+              className={`see-less-button ${styles['centered-button']}`}
+              onClick={toggleExpansion}
+            >
+              See less
+            </button>
+          )}
         </div>
       </div>
     </>
