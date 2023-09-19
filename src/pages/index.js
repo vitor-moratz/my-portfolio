@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
-import Button from '@/components/Button';
 import React, { useState } from 'react';
 import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp, FaArrowCircleUp } from 'react-icons/fa';
 
