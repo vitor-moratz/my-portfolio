@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer';
-import Header from '@/components/Header';
-import '@/styles/globals.css';
+import Header from '../components/Header';
+import '../styles/globals.css';
 import { Saira } from 'next/font/google';
 import { useRef } from 'react';
 const saira = Saira({ subsets: ['latin'] });

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Button from './Button';
-import styles from '@/styles/Header.module.css';
+import styles from '../styles/Header.module.css';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
 export default function Header({ aboutMeRef, projectsRef, skillsRef, certificationsRef }) {
