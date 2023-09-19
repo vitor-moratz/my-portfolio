@@ -2,8 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 import Button from '@/components/Button';
-import { FaArrowUp } from 'react-icons/fa';
-import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp, FaArrowCircleUp } from 'react-icons/fa';
 
 export default function Home({ aboutMeRef, projectsRef, skillsRef }) {
 
@@ -41,8 +40,8 @@ export default function Home({ aboutMeRef, projectsRef, skillsRef }) {
         <u>
           <h1 id='aboutme'>About Me</h1>
         </u>
-        <a id='gotop' className={styles['redirect']} href="/" rel="noopener noreferrer">
-          <FaArrowUp />
+        <a className={styles['go-top']} href="#">
+          <FaArrowCircleUp />
         </a>
         <div className={styles['about-details-container']}>
           <div className={styles['about-details']}>

@@ -1,9 +1,9 @@
-
 body, html {
   margin: 0;
   overflow-x: hidden; 
   background-color: #1A1D1E;
   color: #dfdfdf;
+  scroll-behavior: smooth;
 }
 
 main {

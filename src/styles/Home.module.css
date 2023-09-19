@@ -55,20 +55,22 @@
   justify-content: space-evenly;
   align-items: center;
 }
-.gotop > svg {
+.go-top > svg {
   position: fixed;
-  width: 5rem;
-  height: 5rem;
-  background: #1A1D1E;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
   bottom: 5rem;
   right: 5rem;
-
   text-decoration: none;
   text-align: center;
-  line-height: 5rem;
-  color: white;
-  font-size: 5rem;
+  color: rgb(255, 255, 255);
 }
+
+.go-top > svg:hover {
+  transform: scale(1.2);
+}
+
 .about-details {
   width: 110%;
   display: flex;
@@ -185,6 +187,9 @@
   color: white;
   margin-right: 2.5rem;
 }
+.redirect > svg:hover {
+  transform: scale(1.2);
+}
 
 @media (max-width: 450px) {
   .apresentation-container {
@@ -229,6 +234,14 @@
   .projects-container {
     padding-top: 1rem;
     padding-bottom: 2rem; 
+  }
+  .go-top > svg {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1rem;
+    bottom: 1.5rem;
+    right: 1.2rem;
   }
 
   .projects-icons {
