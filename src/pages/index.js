@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 import Button from '@/components/Button';
+import React, { useState } from 'react';
 import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp, FaArrowCircleUp } from 'react-icons/fa';
 
 export default function Home({ aboutMeRef, projectsRef, skillsRef }) {
@@ -16,6 +17,12 @@ export default function Home({ aboutMeRef, projectsRef, skillsRef }) {
     K6: '/k6.png',
     HTML: '/html5.png',
     React: '/react2.png',
+  };
+
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleExpansion = () => {
+    setExpanded(!expanded);
   };
 
   return (
@@ -98,21 +105,43 @@ export default function Home({ aboutMeRef, projectsRef, skillsRef }) {
           </div>
         </div>
       </div>
-
       <div className={styles['projects-container']} ref={projectsRef}>
-        <u>
         <h1 id='projects'>Projects</h1>
-        </u>
         <div className={styles['projects-links']}>
-          <div className={styles['projects-icons']} />
-          <div className={styles['projects-icons']} />
-          <div className={styles['projects-icons']} />
+          <div className={styles['projects-icons']}></div>
+          <div className={styles['projects-icons']}></div>
+          <div className={styles['projects-icons']}></div>
         </div>
         <div className={styles['see-more']}>
-          <Button id='see-more-button' text='See more' />
+          {!expanded && (
+            <button
+              id='see-more-button'
+              className={`see-more-button ${styles['centered-button']}`}
+              onClick={toggleExpansion}
+            >
+              See more
+            </button>
+          )}
+          {expanded && (
+            <div className={styles['expanded-content']}>
+              <div className={styles['projects-links']}>
+                <div className={styles['projects-icons']}></div>
+                <div className={styles['projects-icons']}></div>
+                <div className={styles['projects-icons']}></div>
+              </div>
+            </div>
+          )}
+          {expanded && (
+            <button
+              className={`see-less-button ${styles['centered-button']}`}
+              onClick={toggleExpansion}
+            >
+              See less
+            </button>
+          )}
         </div>
       </div>
-      <div className={styles['skills-container']} ref={skillsRef}>
+     <div className={styles['skills-container']} ref={skillsRef}>
         <u>
         <h1 id='skills'>Skills</h1>
         </u>

@@ -122,7 +122,7 @@
   height: 15rem;
   background-color: #dfdfdf;
   border-radius: 100%;
-  margin: 3rem 2rem;
+  margin: 2rem 1.7rem;
 }
 
 .projects-links {
@@ -132,7 +132,6 @@
 }
 
 .projects-buttons {
-
   display: flex;
 }
 
@@ -190,6 +189,44 @@
 .redirect > svg:hover {
   transform: scale(1.2);
 }
+
+.see-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
+}
+
+.centered-button{
+  font-weight:500;
+  font-size: 12px;
+  color: #000000;
+  background-color: #dfdfdf;
+  padding: 5px 10px;
+  border: 2px solid #dfdfdf;
+  box-shadow: #000000 0px 0px 0px 0px;
+  border-radius: 15px;
+  transition : 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  margin: 0.25rem;
+  justify-content: center; 
+  text-align: center;
+  }
+  
+.centered-button:hover{
+  
+  transition : 1000ms;
+  padding: 5px 12px;
+  transform : translateY(-1px);
+  background-color: #fff;
+  color: #333333;
+  border: solid 2px #dfdfdf;
+  }
 
 @media (max-width: 450px) {
   .apresentation-container {
