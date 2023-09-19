@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 import Button from '@/components/Button';
+import { FaArrowUp } from 'react-icons/fa';
 import { FaInstagram, FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 
 export default function Home({ aboutMeRef, projectsRef, skillsRef }) {
@@ -40,6 +41,9 @@ export default function Home({ aboutMeRef, projectsRef, skillsRef }) {
         <u>
           <h1 id='aboutme'>About Me</h1>
         </u>
+        <a id='gotop' className={styles['redirect']} href="/" rel="noopener noreferrer">
+          <FaArrowUp />
+        </a>
         <div className={styles['about-details-container']}>
           <div className={styles['about-details']}>
             <div className={styles['about-foto']}>
@@ -59,7 +63,6 @@ export default function Home({ aboutMeRef, projectsRef, skillsRef }) {
               </p>
             </div>
           </div>
-
           <div className={styles['about-skills']} >
             <div className={styles['language-skills']}>
               <u>

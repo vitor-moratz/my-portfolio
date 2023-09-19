@@ -55,6 +55,20 @@
   justify-content: space-evenly;
   align-items: center;
 }
+.gotop > svg {
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  background: #1A1D1E;
+  bottom: 5rem;
+  right: 5rem;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 5rem;
+  color: white;
+  font-size: 5rem;
+}
 .about-details {
   width: 110%;
   display: flex;
@@ -84,7 +98,7 @@
 }
 
 .about-skills {
-  width: 50%;
+  width: 73%;
 }
 
 .language-skills {
