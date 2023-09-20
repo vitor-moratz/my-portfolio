@@ -23,7 +23,7 @@ color: #ffffff;
 
 @media (max-width: 450px) {
     .button {
-      font-size: 15px; 
+      font-size: 12px; 
       padding: 3px 10px; 
       margin: 0.2rem; 
     }
