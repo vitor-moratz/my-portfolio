@@ -64,7 +64,7 @@
   width: 3rem;
   height: 3rem;
   border-radius: 1rem;
-  bottom: 5rem;
+  bottom: 2rem;
   right: 5rem;
   text-decoration: none;
   text-align: center;
@@ -169,6 +169,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .skills-icons img {
@@ -179,6 +180,79 @@
   top: 50%;
   left: 50%;
   transform: translate(50%, 50%);
+}
+
+/* Adicione essas regras de estilo ao seu arquivo CSS */
+
+/* Estilização do conteúdo da modal */
+.modal-content {
+  background-color: #0B0B0B; /* Fundo branco */
+  padding: 20px;
+  border-radius: 10rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  text-align: center;
+  width: 30%;
+  height: 40%;
+  cursor: default;
+  border-radius: 5rem;
+}
+
+.modal-content h1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.modal-container p {
+  padding-top: 0.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.modal-content button {
+  background-color: #dfdfdf; 
+  color: #000000; 
+  font-weight: 550;
+  border: none;
+  display: flex;
+  position: fixed;
+  top: 37rem;
+  left: 57rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.modal-content button:hover {
+  background-color: #ffffff;
+}
+
+.modal-container {
+  position: fixed;
+  top: -30px;
+  left: -110px;
+  width: 110%;
+  height: 110%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  cursor: default;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.skills-icons.modal-open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .certifications-container {
@@ -340,8 +414,8 @@
   }
 
   .skills-icons {
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     margin: 1rem;
   }
 
@@ -349,8 +423,8 @@
     width: 70% !important; 
     height: 60% !important; 
     transform: translate(0%, 0%); 
-    margin-left: 0.55rem;
-    margin-top: 0.9rem;
+    margin-left: 0.50rem;
+    margin-top: 0.7rem;
     margin-bottom: 1rem;
   }
   

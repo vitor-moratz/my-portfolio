@@ -18,10 +18,31 @@ export default function Home({ aboutMeRef, projectsRef, skillsRef, certification
     React: '/react2.png',
   };
 
+  const skillContent = {
+    Robot: "Robot Framework é uma estrutura de automação de código aberto que facilita a criação e execução de testes automatizados e automação de processos. É amplamente utilizado para testes de aceitação e automação de tarefas em uma variedade de domínios, incluindo desenvolvimento de software, testes de software, automação de interface do usuário, testes de aplicativos web e muito mais.",
+    BDD: "Behavior-Driven Development (BDD), ou Desenvolvimento Orientado ao Comportamento, é uma abordagem de desenvolvimento de software que se concentra em compreender e especificar o comportamento esperado de um sistema a partir da perspectiva do usuário. O BDD é uma extensão do Test-Driven Development (TDD) que coloca maior ênfase na linguagem natural e na colaboração entre desenvolvedores, testadores e partes interessadas (stakeholders) do projeto.",
+    CSS: "Cascading Style Sheets (CSS), que em português significa Folhas de Estilo em Cascata, é uma linguagem de marcação amplamente utilizada na criação e estilização de páginas da web. O CSS desempenha um papel crucial na apresentação visual e no layout de um site, permitindo que os desenvolvedores controlem a aparência e o posicionamento de elementos HTML em uma página.",
+    PlayWright: "Playwright é uma estrutura de automação de testes e navegação para desenvolvedores e testadores de software. Desenvolvida pela Microsoft, ela permite a automação de interações com navegadores da web, como Chrome, Firefox, e WebKit (Safari), de forma eficiente e consistente. O Playwright é conhecido por sua capacidade de oferecer suporte multi-navegador com uma única API, o que o torna uma escolha poderosa para automação de testes e tarefas de navegação na web.",
+    Git: "Git é um sistema de controle de versão distribuído amplamente utilizado para o rastreamento de mudanças no código-fonte durante o desenvolvimento de software. Criado por Linus Torvalds em 2005, o Git se tornou uma das ferramentas mais essenciais para desenvolvedores, facilitando o trabalho colaborativo, o gerenciamento de código e o controle de versão de projetos de software.",
+    JS: "JavaScript (JS) é uma linguagem de programação amplamente utilizada para desenvolver aplicativos web interativos. Ela desempenha um papel crucial na criação de recursos dinâmicos e interativos em sites, adicionando comportamento e funcionalidade aos elementos HTML e CSS. Criada originalmente pela Netscape em 1995, o JavaScript se tornou uma das linguagens de programação mais populares e é suportada pela maioria dos navegadores da web.",
+    K6: "K6 é uma ferramenta de teste de carga de código aberto projetada para avaliar o desempenho e a escalabilidade de aplicativos e serviços web. Desenvolvida pela Load Impact, a K6 oferece uma abordagem moderna e programável para simular tráfego em escala e testar como um sistema se comporta sob carga.",
+    HTML: "HTML (Hypertext Markup Language), em português Linguagem de Marcação de Hipertexto, é a espinha dorsal da World Wide Web. É uma linguagem de marcação utilizada para criar e estruturar o conteúdo de páginas da web. Criada por Tim Berners-Lee no início dos anos 90, o HTML é a linguagem fundamental para a criação de documentos da web, e desempenhou um papel essencial na revolução da informação e da comunicação que caracteriza a internet moderna.",
+    React: "React é uma biblioteca JavaScript de código aberto amplamente utilizada para criar interfaces de usuário (UI) interativas e componentes reutilizáveis para aplicativos web e móveis. Desenvolvida e mantida pelo Facebook, o React se tornou uma das ferramentas mais populares e influentes para o desenvolvimento front-end.",
+  };
+
   const [expanded, setExpanded] = useState(false);
+  const [selectedSkill, setSelectedSkill] = useState(null);
 
   const toggleExpansion = () => {
     setExpanded(!expanded);
+  };
+
+  const openSkillModal = (skill) => {
+    setSelectedSkill(skill);
+  };
+
+  const closeSkillModal = () => {
+    setSelectedSkill(null);
   };
 
   return (
@@ -142,18 +163,31 @@ export default function Home({ aboutMeRef, projectsRef, skillsRef, certification
           )}
         </div>
       </div>
-     <div className={styles['skills-container']} ref={skillsRef}>
+      <div className={styles['skills-container']} ref={skillsRef}>
         <u>
-        <h1 id='skills'>Skills</h1>
+          <h1 id='skills'>Skills</h1>
         </u>
         <div className={styles['skills-logos']}>
           {Object.keys(icons).map((icon) => (
-            <div key={icon} className={styles['skills-icons']}>
+            <div
+              key={icon}
+              className={`${styles['skills-icons']} ${selectedSkill ? 'modal-open' : ''}`}
+              onClick={() => openSkillModal(icon)}
+            >
               <Image src={icons[icon]} alt={icon} key={icon} fill />
             </div>
           ))}
         </div>
       </div>
+      {selectedSkill && (
+        <div className={`${styles['modal-container']} ${styles['skills-icons']}`} onClick={closeSkillModal}>
+          <div className={styles['modal-content']} onClick={(e) => e.stopPropagation()}>
+            <h1 className='description'>Description</h1>
+            <p>{skillContent[selectedSkill]}</p>
+            <button onClick={closeSkillModal}>Close</button>
+          </div>
+        </div>
+      )}
       <div className={styles['certifications-container']} ref={certificationsRef}>
         <u>
         <h1 id='certifications'>Certifications</h1>
