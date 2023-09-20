@@ -158,8 +158,8 @@
 
 .skills-icons {
   margin: 1rem;
-  width: 10rem;
-  height: 9rem;
+  width: 9rem;
+  height: 8rem;
   position: relative;
 }
 
@@ -170,6 +170,11 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.skills-icons:hover {
+  transform: scale(1.05);
+  background-color: #fff;
 }
 
 .skills-icons img {
@@ -183,15 +188,25 @@
 }
 
 .modal-content {
+  position: relative;
   background-color: #0B0B0B;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
   padding: 20px;
   border-radius: 10rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 30%;
-  height: 40%;
-  cursor: default;
+  /* min-width: 30%; */
+  /* min-height: 40%; */
+  max-width: 50vw;
+  max-height: 80vh;
+  height: fit-content;
+  width: fit-content; 
   border-radius: 5rem;
+  cursor: default;
+  pointer-events: none;
+  overflow: hidden;
 }
 
 .modal-content h1 {
@@ -200,14 +215,20 @@
   font-size: 24px;
   margin-bottom: 10px;
   color: #ffffff;
+  cursor: default;
+  pointer-events: none;
+  overflow: hidden;
 }
 
 .modal-container p {
-  padding-top: 0.5rem;
   padding-left: 3rem;
   padding-right: 3rem;
+  padding-bottom: 2.5rem;
   font-size: 15px;
   color: #ffffff;
+  cursor: default;
+  pointer-events: none;
+  overflow: hidden;
 }
 
 .modal-content button {
@@ -216,7 +237,9 @@
   font-weight: 550;
   border: none;
   display: flex;
-  position: relative;
+  position: fixed;
+  left: 49.5%;
+  transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
   padding: 10px 20px;
@@ -231,8 +254,7 @@
 
 .modal-container {
   position: fixed;
-  top: -30px;
-  left: -110px;
+  inset: 0;
   width: 110%;
   height: 110%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -321,7 +343,6 @@
   }
   
 .centered-button:hover{
-  
   transition : 1000ms;
   padding: 5px 12px;
   transform : translateY(-1px);
@@ -434,4 +455,20 @@
   .redirect > svg {
     margin-bottom: 1rem; 
   }
+}
+
+.modal-content h1 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.modal-container p {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 3.5rem;
+  font-size: 12px;
+}
+
+.modal-content button {
+  top: 88%;
 }

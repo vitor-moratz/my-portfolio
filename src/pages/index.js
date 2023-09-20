@@ -17,7 +17,8 @@ export default function Home({ aboutMeRef, projectsRef, skillsRef, certification
     HTML: '/html5.png',
     React: '/react2.png',
   };
-
+  /*
+  Português
   const skillContent = {
     Robot: "Robot Framework é uma estrutura de automação de código aberto que facilita a criação e execução de testes automatizados e automação de processos. É amplamente utilizado para testes de aceitação e automação de tarefas em uma variedade de domínios, incluindo desenvolvimento de software, testes de software, automação de interface do usuário, testes de aplicativos web e muito mais.",
     BDD: "Behavior-Driven Development (BDD), ou Desenvolvimento Orientado ao Comportamento, é uma abordagem de desenvolvimento de software que se concentra em compreender e especificar o comportamento esperado de um sistema a partir da perspectiva do usuário. O BDD é uma extensão do Test-Driven Development (TDD) que coloca maior ênfase na linguagem natural e na colaboração entre desenvolvedores, testadores e partes interessadas (stakeholders) do projeto.",
@@ -28,6 +29,20 @@ export default function Home({ aboutMeRef, projectsRef, skillsRef, certification
     K6: "K6 é uma ferramenta de teste de carga de código aberto projetada para avaliar o desempenho e a escalabilidade de aplicativos e serviços web. Desenvolvida pela Load Impact, a K6 oferece uma abordagem moderna e programável para simular tráfego em escala e testar como um sistema se comporta sob carga.",
     HTML: "HTML (Hypertext Markup Language), em português Linguagem de Marcação de Hipertexto, é a espinha dorsal da World Wide Web. É uma linguagem de marcação utilizada para criar e estruturar o conteúdo de páginas da web. Criada por Tim Berners-Lee no início dos anos 90, o HTML é a linguagem fundamental para a criação de documentos da web, e desempenhou um papel essencial na revolução da informação e da comunicação que caracteriza a internet moderna.",
     React: "React é uma biblioteca JavaScript de código aberto amplamente utilizada para criar interfaces de usuário (UI) interativas e componentes reutilizáveis para aplicativos web e móveis. Desenvolvida e mantida pelo Facebook, o React se tornou uma das ferramentas mais populares e influentes para o desenvolvimento front-end.",
+  };
+ */
+
+  /*Aqui abaixo está em inglês*/
+  const skillContent = {
+    Robot: "Robot Framework is an open source automation framework that facilitates the creation and execution of automated tests and process automation. It is widely used for acceptance testing and task automation in a variety of domains, including software development, testing software, UI automation, web application testing, and more.",
+    BDD: "Behavior-Driven Development (BDD) is a software development approach that focuses on understanding and specifying the expected behavior of a system from the user's perspective. BDD is an extension of Test-Driven Development (TDD) that places greater emphasis on natural language and collaboration between developers, testers and project stakeholders.",
+    CSS: "Cascading Style Sheets (CSS), which in Portuguese means Cascading Style Sheets, is a markup language widely used in creating and styling web pages. CSS plays a crucial role in the visual presentation and layout of a web page. website, allowing developers to control the appearance and positioning of HTML elements on a page.",
+    PlayWright: "Playwright is a test and navigation automation framework for software developers and testers. Developed by Microsoft, it enables the automation of interactions with web browsers, such as Chrome, Firefox, and WebKit (Safari), efficiently and consistent. Playwright is known for its ability to offer multi-browser support with a single API, which makes it a powerful choice for test automation and web browsing tasks.",
+    Git: "Git is a distributed version control system widely used for tracking changes to source code during software development. Created by Linus Torvalds in 2005, Git has become one of the most essential tools for developers, facilitating collaborative work, code management and version control of software projects.",
+    JS: "JavaScript (JS) is a programming language widely used for developing interactive web applications. It plays a crucial role in creating dynamic and interactive features on websites by adding behavior and functionality to HTML and CSS elements. Originally created by Netscape in 1995, JavaScript became one of the most popular programming languages and is supported by most web browsers.",
+    K6: "K6 is an open source load testing tool designed to evaluate the performance and scalability of web applications and services. Developed by Load Impact, K6 offers a modern, programmable approach to simulating traffic at scale and testing as a system behaves under load.",
+    HTML: "HTML (Hypertext Markup Language), in Portuguese Hypertext Markup Language, is the backbone of the World Wide Web. It is a markup language used to create and structure the content of web pages. Created by Tim Berners-Lee In the early 1990s, HTML is the fundamental language for creating web documents, and it played an essential role in the information and communication revolution that characterizes the modern internet.",
+    React: "React is an open-source JavaScript library widely used for creating interactive user interfaces (UI) and reusable components for web and mobile applications. Developed and maintained by Facebook, React has become one of the most popular and influential tools for front-end development.",
   };
 
   const [expanded, setExpanded] = useState(false);
@@ -180,7 +195,7 @@ export default function Home({ aboutMeRef, projectsRef, skillsRef, certification
         </div>
       </div>
       {selectedSkill && (
-        <div className={`${styles['modal-container']} ${styles['skills-icons']}`} onClick={closeSkillModal}>
+        <div className={`${styles['modal-container']}`} onClick={closeSkillModal}>
           <div className={styles['modal-content']} onClick={(e) => e.stopPropagation()}>
             <h1 className='description'>Description</h1>
             <p>{skillContent[selectedSkill]}</p>
