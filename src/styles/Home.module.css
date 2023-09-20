@@ -158,8 +158,8 @@
 
 .skills-icons {
   margin: 1rem;
-  width: 9rem;
-  height: 8rem;
+  width: 10rem;
+  height: 9rem;
   position: relative;
 }
 
@@ -182,14 +182,11 @@
   transform: translate(50%, 50%);
 }
 
-/* Adicione essas regras de estilo ao seu arquivo CSS */
-
-/* Estilização do conteúdo da modal */
 .modal-content {
-  background-color: #0B0B0B; /* Fundo branco */
+  background-color: #0B0B0B;
   padding: 20px;
   border-radius: 10rem;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   width: 30%;
   height: 40%;
@@ -219,9 +216,9 @@
   font-weight: 550;
   border: none;
   display: flex;
-  position: fixed;
-  top: 37rem;
-  left: 57rem;
+  position: relative;
+  align-items: center;
+  justify-content: center;
   padding: 10px 20px;
   border-radius: 8px;
   cursor: pointer;

@@ -184,7 +184,7 @@ export default function Home({ aboutMeRef, projectsRef, skillsRef, certification
           <div className={styles['modal-content']} onClick={(e) => e.stopPropagation()}>
             <h1 className='description'>Description</h1>
             <p>{skillContent[selectedSkill]}</p>
-            <button onClick={closeSkillModal}>Close</button>
+            <button className={styles['button-close']} onClick={closeSkillModal}>Close</button>
           </div>
         </div>
       )}
